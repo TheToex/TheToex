@@ -55,14 +55,6 @@ Repeat.
 ## GitHub Statistics
 
 <p align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=TheToex&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github"/>
-
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TheToex&layout=compact&theme=github_dark&hide_border=true"/>
-
-</p>
-
-<p align="center">
 <img src="https://streak-stats.demolab.com?user=TheToex&theme=github-dark&hide_border=true"/>
 </p>
 
