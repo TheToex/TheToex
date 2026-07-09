@@ -40,19 +40,6 @@ Current interests include:
 
 ---
 
-## Featured Projects
-
-### clock-bot
-Telegram automation bot that updates profile information in real time.
-
-### dotfiles
-Personal Hyprland configuration for Arch Linux.
-
-### SQL-Injection-Scanner
-Educational SQL injection scanner written in Python.
-
----
-
 ## Philosophy
 
 ```text
