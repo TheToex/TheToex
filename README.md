@@ -70,7 +70,7 @@ Repeat.
 
 ## Connect
 
-- Telegram: **@TheToex**
+- Telegram: [**@TheToex**](https://t.me/TheToex)
 - Email: **TheToex@proton.me**
 
 ---
