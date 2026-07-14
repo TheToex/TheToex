@@ -35,7 +35,7 @@ Current interests include:
 ## Tech Stack
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=linux,arch,bash,c,python,docker,kubernetes,git,github,vscode,vim&perline=10"/>
+<img src="https://skillicons.dev/icons?i=linux,arch,bash,c,python,docker,git,github,vscode,vim&perline=10"/>
 </p>
 
 ---
