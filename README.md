@@ -8,9 +8,13 @@ thetoex@github:~$ whoami
 Just another tech guy.
 ```
 
-Building reliable infrastructure, automating repetitive tasks, and continuously improving through real-world projects.
-
 </div>
+
+## GitHub Statistics
+
+<p align="center">
+<img src="https://streak-stats.demolab.com?user=TheToex&theme=github-dark&hide_border=true"/>
+</p>
 
 ---
 
@@ -39,24 +43,6 @@ Current interests include:
 </p>
 
 ---
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-fast.vercel.app/api?username=TheToex&show_icons=true&theme=radical">
-  <img alt="GitHub stats" src="https://github-readme-stats-fast.vercel.app/api?username=TheToex&show_icons=true&theme=default">
-</picture>
-<br>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=TheToex&theme=radical">
-  <img alt="Top Langs" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=TheToex&theme=default">
-</picture>
----
-
-## GitHub Statistics
-
-<p align="center">
-<img src="https://streak-stats.demolab.com?user=TheToex&theme=github-dark&hide_border=true"/>
-</p>
-
----
 
 ## Connect
 
@@ -64,7 +50,15 @@ Current interests include:
 - Email: **TheToex@proton.me**
 
 ---
+## Support 
 
+If you like my projects, you can support my work:
+
+<p align="center">
+  <a href="https://thetoex.github.io/donate/">
+    <img src="https://img.shields.io/static/v1?label=Donate&message=Support%20My%20Work&color=blue&style=for-the-badge&logo=github-sponsors&logoColor=white" alt="Donate to TheToex">
+  </a>
+</p>
 <div align="center">
 
 > "Learning by building."
