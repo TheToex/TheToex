@@ -16,7 +16,6 @@ Just another tech guy.
 <img src="https://streak-stats.demolab.com?user=TheToex&theme=github-dark&hide_border=true"/>
 </p>
 
----
 
 ## About Me
 
@@ -35,14 +34,13 @@ Current interests include:
 - Networking
 
 ---
-
 ## Tech Stack
 
 <p align="center">
 <img src="https://skillicons.dev/icons?i=linux,arch,bash,c,python,docker,git,github,vscode,vim&perline=10"/>
 </p>
 
----
+
 
 ## Connect
 
@@ -50,7 +48,7 @@ Current interests include:
 - Email: **TheToex@proton.me**
 
 ---
-## Support 
+## Support
 
 If you like my projects, you can support my work:
 
