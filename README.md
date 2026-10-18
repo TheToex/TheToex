@@ -39,17 +39,15 @@ Current interests include:
 </p>
 
 ---
-
-## Philosophy
-
-```text
-Write code.
-Automate it.
-Deploy it.
-Improve it.
-Repeat.
-```
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-fast.vercel.app/api?username=TheToex&show_icons=true&theme=radical">
+  <img alt="GitHub stats" src="https://github-readme-stats-fast.vercel.app/api?username=TheToex&show_icons=true&theme=default">
+</picture>
+<br>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=TheToex&theme=radical">
+  <img alt="Top Langs" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=TheToex&theme=default">
+</picture>
 ---
 
 ## GitHub Statistics
