@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Toex (TheToex) - DevOps & Linux Infrastructure Engineer. Passionate about automation, containers, open source, and high-availability systems.">
+    <meta name="keywords" content="DevOps, Linux, Docker, Kubernetes, CI/CD, Python, Bash, C, Networking, Automation, TheToex, Cloudflare">
+    <meta name="author" content="TheToex">
+    <meta name="theme-color" content="#030712">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="TheToex | DevOps & Linux Infrastructure Engineer">
+    <meta property="og:description" content="Personal portfolio and resume of Toex. Linux, DevOps, automation and cloud-native systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thetoex.ir">
+    <meta property="og:image" content="assets/images/avatar.jpg">
+
+    <title data-i18n="pageTitle">TheToex | DevOps & Linux Infrastructure Engineer</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/jpeg" href="assets/images/avatar.jpg">
+</head>
+<body>
+
+    <!-- Animated Ambient Glow Blobs -->
+    <div class="background-glow" aria-hidden="true">
+        <div class="glow-blob"></div>
+        <div class="glow-blob"></div>
+        <div class="glow-blob"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-logo" aria-label="TheToex Home">
+                <span class="brand-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="4 17 10 11 4 5"></polyline>
+                        <line x1="12" y1="19" x2="20" y2="19"></line>
+                    </svg>
+                </span>
+                <span class="brand-name">TheToex<span class="brand-dot">.</span></span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+
+            <!-- Actions: Language Toggle & Donate -->
+            <div class="nav-actions">
+                <!-- Language Switcher Pill (Default shows Persian button to switch to FA) -->
+                <button type="button" class="lang-btn" id="lang-toggle-btn" title="Switch Language / تغییر زبان">
+                    <span class="lang-flag" id="current-lang-flag">🇮🇷</span>
+                    <span id="current-lang-label">فارسی</span>
+                </button>
+
+                <!-- Donate Link -->
+                <a href="/donate" class="nav-donate-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                    <span data-i18n="nav.donate">Donate</span>
+                </a>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button type="button" class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#about" class="mobile-nav-link" data-i18n="nav.about">About</a>
+            <a href="#skills" class="mobile-nav-link" data-i18n="nav.skills">Skills</a>
+            <a href="#projects" class="mobile-nav-link" data-i18n="nav.projects">Projects</a>
+            <a href="#contact" class="mobile-nav-link" data-i18n="nav.contact">Contact</a>
+            <a href="/donate" class="mobile-nav-link" data-i18n="nav.donate">Donate</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-grid">
+                <!-- Textual Introduction -->
+                <div class="hero-content">
+                    <div class="status-pill">
+                        <span class="pulse-dot"></span>
+                        <span data-i18n="hero.statusBadge">Available for Projects & Collaboration</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span data-i18n="hero.greeting">Hi, I'm</span>
+                        <span class="hero-name-gradient" data-i18n="hero.name">TheToex</span>
+                    </h1>
+
+                    <div class="hero-subtitle" data-i18n="hero.role">
+                        DevOps & Linux Infrastructure Engineer
+                    </div>
+
+                    <p class="hero-bio" data-i18n="hero.bio">
+                        Passionate about Linux systems, infrastructure automation, containers, and open-source software. Instead of collecting theoretical tutorials, I build real-world, high-availability solutions.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#contact" class="btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                            </svg>
+                            <span data-i18n="hero.btnContact">Get In Touch</span>
+                        </a>
+
+                        <a href="/donate" class="btn-secondary">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="color: #f43f5e;">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                            <span data-i18n="hero.btnDonate">Support My Work</span>
+                        </a>
+
+                        <a href="https://github.com/TheToex" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            <span data-i18n="hero.btnGitHub">GitHub Profile</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Visual Element: Avatar & Interactive Terminal -->
+                <div class="hero-visual">
+                    <div class="hero-avatar-wrapper">
+                        <img src="assets/images/avatar.jpg" alt="TheToex Profile" class="hero-avatar-img">
+                    </div>
+
+                    <!-- Interactive Terminal Simulation -->
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-controls">
+                                <span class="terminal-dot red"></span>
+                                <span class="terminal-dot yellow"></span>
+                                <span class="terminal-dot green"></span>
+                            </div>
+                            <span class="terminal-title">Terminal</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-prompt-line">
+                                <span class="terminal-prompt-host">toex@shinigami</span>:<span class="terminal-prompt-char">~</span>$
+                                <span class="terminal-command" id="terminal-active-command">whoami</span>
+                                <span class="terminal-cursor"></span>
+                            </div>
+                            <div class="terminal-output" id="terminal-active-output">Toex | Infrastructure Engineer & Linux Advocate
+> Focus: Resilience, automation, containers, and distributed networks.</div>
+
+                            <!-- Terminal Tab Buttons -->
+                            <div class="terminal-quick-nav">
+                                <button type="button" class="terminal-cmd-trigger active" data-cmd="whoami">whoami</button>
+                                <button type="button" class="terminal-cmd-trigger" data-cmd="philosophy">philosophy.txt</button>
+                                <button type="button" class="terminal-cmd-trigger" data-cmd="skills">skills</button>
+                                <button type="button" class="terminal-cmd-trigger" data-cmd="uptime">uptime</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-i18n="stats.stat1Val">100%</div>
+                        <div class="stat-label" data-i18n="stats.stat1Label">Real-World Driven Approach</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-i18n="stats.stat2Val">Open Source</div>
+                        <div class="stat-label" data-i18n="stats.stat2Label">Active Philosophy & Sharing</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-i18n="stats.stat3Val">CI/CD</div>
+                        <div class="stat-label" data-i18n="stats.stat3Label">Infrastructure Automation</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-i18n="stats.stat4Val">Linux</div>
+                        <div class="stat-label" data-i18n="stats.stat4Label">Systems & Distributed Tech</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section reveal-on-scroll" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="about.badge">Get to know me</span>
+                    <h2 class="section-title" data-i18n="about.title">My Journey & Philosophy</h2>
+                </div>
+
+                <div class="about-text-card">
+                    <p data-i18n="about.p1">
+                        I am deeply passionate about Linux, DevOps, automation, and the open-source movement. I believe actual engineering value is created when technical depth is transformed into scalable, secure, and self-healing infrastructure.
+                    </p>
+                    <p data-i18n="about.p2">
+                        Rather than passively accumulating guides, I build real setups that solve practical challenges. Every repository I craft represents hands-on learning through designing, testing, and continuous iteration.
+                    </p>
+                </div>
+
+                <!-- 4 Core Pillars -->
+                <div class="pillars-grid">
+                    <div class="pillar-card">
+                        <div class="pillar-icon-box pillar-icon-1">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="pillar-title" data-i18n="about.pillar1Title">Infrastructure & Automation</h3>
+                        <p class="pillar-desc" data-i18n="about.pillar1Desc">Designing robust CI/CD pipelines, configuration management, and automating redundant operations with Bash & Python.</p>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon-box pillar-icon-2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="pillar-title" data-i18n="about.pillar2Title">Linux Systems & Internals</h3>
+                        <p class="pillar-desc" data-i18n="about.pillar2Desc">Deep familiarity with Linux systems, process scheduling, systemd unit crafting, and network tuning.</p>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon-box pillar-icon-3">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3 class="pillar-title" data-i18n="about.pillar3Title">Containers & Cloud Native</h3>
+                        <p class="pillar-desc" data-i18n="about.pillar3Desc">Architecting isolated environments with Docker & Docker Compose, gearing up for scalable microservices and orchestration.</p>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon-box pillar-icon-4">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="pillar-title" data-i18n="about.pillar4Title">Networking & Defense</h3>
+                        <p class="pillar-desc" data-i18n="about.pillar4Desc">Configuring reverse proxies, modern firewalls, traffic routing, and Cloudflare perimeter protection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section with SkillIcons -->
+        <section class="section reveal-on-scroll" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="skills.badge">Technical Arsenal</span>
+                    <h2 class="section-title" data-i18n="skills.title">Tech Stack & Tools</h2>
+                    <p class="section-subtitle" data-i18n="skills.subtitle">Technologies and tools I utilize daily to build and maintain resilient platforms</p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="skills-filter-nav">
+                    <button type="button" class="skill-filter-btn active" data-filter="all" data-i18n="skills.categories.all">All Tech</button>
+                    <button type="button" class="skill-filter-btn" data-filter="devops" data-i18n="skills.categories.devops">DevOps & Containers</button>
+                    <button type="button" class="skill-filter-btn" data-filter="linux" data-i18n="skills.categories.linux">Linux & Systems</button>
+                    <button type="button" class="skill-filter-btn" data-filter="dev" data-i18n="skills.categories.dev">Development & Scripting</button>
+                    <button type="button" class="skill-filter-btn" data-filter="network" data-i18n="skills.categories.network">Network & Security</button>
+                </div>
+
+                <!-- Skills Grid with Local SkillIcons -->
+                <div class="skills-grid">
+                    <!-- Docker -->
+                    <div class="skill-card" data-category="devops">
+                        <div class="skill-icon">
+                            <img src="assets/icons/docker.svg" alt="Docker" width="40" height="40" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Docker</span>
+                            <span class="skill-level">Containers & Compose</span>
+                        </div>
+                    </div>
+
+                    <!-- Kubernetes -->
+                    <div class="skill-card" data-category="devops">
+                        <div class="skill-icon">
+                            <img src="assets/icons/kubernetes.svg" alt="Kubernetes" width="40" height="40" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Kubernetes</span>
+                            <span class="skill-level">Pods & Orchestration</span>
+                        </div>
+                    </div>
+
+                    <!-- Linux Systems -->
+                    <div class="skill-card" data-category="linux">
+                        <div class="skill-icon">
+                            <img src="assets/icons/linux.svg" alt="Linux" width="40" height="40" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">GNU / Linux</span>
+                            <span class="skill-level">Kernel & Administration</span>
+                        </div>
+                    </div>
+
+                    <!-- Bash / Shell -->
+                    <div class="skill-card" data-category="dev linux">
+                        <div class="skill-icon">
+                            <img src="assets/icons/bash.svg" alt="Bash" width="40" height="40" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Bash / Shell</span>
+                            <span class="skill-level">Automation Scripting</span>
+                        </div>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="skill-card" data-category="dev">
+                        <div class="skill-icon">
+                            <img src="assets/icons/python.svg" alt="Python" width="40" height="40" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level">Automation & Tooling</span>
+                        </div>
+                    </div>
+
+                    <!-- C Language -->
+                    <div class="skill-card" data-category="dev">
+                        <div class="skill-icon">
+                            <img src="assets/icons/c.svg" alt="C" width="40" height="40" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">C</span>
+                            <span class="skill-level">Systems Programming</span>
+                        </div>
+                    </div>
+
+                    <!-- Git & GitHub -->
+                    <div class="skill-card" data-category="dev network">
+                        <div class="skill-icon">
+                            <img src="assets/icons/github.svg" alt="Git & GitHub" width="40" height="40" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Git & GitHub</span>
+                            <span class="skill-level">Version Control & CI</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloudflare -->
+                    <div class="skill-card" data-category="network">
+                        <div class="skill-icon">
+                            <img src="assets/icons/cloudflare.svg" alt="Cloudflare" width="40" height="40" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Cloudflare</span>
+                            <span class="skill-level">Pages, DNS & Edge</span>
+                        </div>
+                    </div>
+
+                    <!-- Nginx -->
+                    <div class="skill-card" data-category="network devops">
+                        <div class="skill-icon">
+                            <img src="assets/icons/nginx.svg" alt="Nginx" width="40" height="40" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Nginx</span>
+                            <span class="skill-level">Reverse Proxy & SSL</span>
+                        </div>
+                    </div>
+
+                    <!-- VPN (Updated from WireGuard & VPN) -->
+                    <div class="skill-card" data-category="network">
+                        <div class="skill-icon">
+                            <img src="assets/icons/vpn.svg" alt="VPN" width="40" height="40" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">VPN</span>
+                            <span class="skill-level">Secure Routing & Tunnels</span>
+                        </div>
+                    </div>
+
+                    <!-- CLI Tools (Updated from Vim & CLI Tools) -->
+                    <div class="skill-card" data-category="dev linux">
+                        <div class="skill-icon">
+                            <img src="assets/icons/vim.svg" alt="CLI Tools" width="40" height="40" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">CLI Tools</span>
+                            <span class="skill-level">Vim & Terminal Workflow</span>
+                        </div>
+                    </div>
+
+                    <!-- Ansible -->
+                    <div class="skill-card" data-category="devops">
+                        <div class="skill-icon">
+                            <img src="assets/icons/ansible.svg" alt="Ansible" width="40" height="40" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Ansible</span>
+                            <span class="skill-level">Configuration Management</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Clean placeholders ready for future projects) -->
+        <section class="section reveal-on-scroll" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="projects.badge">Highlights</span>
+                    <h2 class="section-title" data-i18n="projects.title">Projects & Repositories</h2>
+                    <p class="section-subtitle" data-i18n="projects.subtitle">A glimpse of open-source projects, automation toolsets, and infrastructure setups on GitHub</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: TTun -->
+                    <div class="project-card">
+                        <div class="project-top">
+                            <span class="project-tag" data-i18n="projects.p1Tag">C / Networking</span>
+                            <span class="project-github-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="project-title" data-i18n="projects.p1Title">TTun</h3>
+                            <p class="project-desc" data-i18n="projects.p1Desc">A simple Layer 3 TCP tunnel written in C for network packet tunneling and routing.</p>
+                        </div>
+                        <a href="https://github.com/TheToex/TTun" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                            <span data-i18n="projects.viewOnGithub">View on GitHub</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+
+                    <!-- Project 2: wordpress-deployer -->
+                    <div class="project-card">
+                        <div class="project-top">
+                            <span class="project-tag" data-i18n="projects.p2Tag">Docker / Systemd</span>
+                            <span class="project-github-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="project-title" data-i18n="projects.p2Title">wordpress-deployer</h3>
+                            <p class="project-desc" data-i18n="projects.p2Desc">Automated WordPress deployment using Docker Compose and systemd service management.</p>
+                        </div>
+                        <a href="https://github.com/TheToex/wordpress-deployer" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                            <span data-i18n="projects.viewOnGithub">View on GitHub</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="all-projects-center">
+                    <a href="https://github.com/TheToex?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                        <span data-i18n="projects.viewAllBtn">Explore all repositories on GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donate Callout Section -->
+        <section class="section reveal-on-scroll">
+            <div class="container">
+                <div class="donate-callout-card">
+                    <div class="donate-coffee-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                            <line x1="6" y1="1" x2="6" y2="4"></line>
+                            <line x1="10" y1="1" x2="10" y2="4"></line>
+                            <line x1="14" y1="1" x2="14" y2="4"></line>
+                        </svg>
+                    </div>
+
+                    <h2 class="donate-card-title" data-i18n="donateCallout.title">Fuel Open Source Development</h2>
+                    <p class="donate-card-desc" data-i18n="donateCallout.desc">
+                        If any of my repositories, scripts, or setups have helped you, consider supporting my work with a coffee or crypto tip!
+                    </p>
+
+                    <a href="/donate" class="donate-big-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" style="width: 20px; height: 20px;">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span data-i18n="donateCallout.btnText">Go to Donate Page</span>
+                    </a>
+
+                    <div class="donate-card-note" data-i18n="donateCallout.note">
+                        Supports Bitcoin (BTC), Tether (USDT TRC20), and more
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section reveal-on-scroll" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="contact.badge">Let's Connect</span>
+                    <h2 class="section-title" data-i18n="contact.title">Always Open to Discussion</h2>
+                    <p class="section-subtitle" data-i18n="contact.subtitle">Whether you want to discuss DevOps opportunities, infrastructure design, or open-source ideas, reach out:</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Telegram -->
+                    <div class="contact-card">
+                        <div class="contact-card-icon icon-tg">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            </svg>
+                        </div>
+                        <h3 class="contact-title" data-i18n="contact.telegramCardTitle">Telegram</h3>
+                        <p class="contact-desc" data-i18n="contact.telegramDesc">Fastest way to get in touch and chat directly</p>
+                        <div class="contact-value">@TheToex</div>
+                        <a href="https://t.me/TheToex" target="_blank" rel="noopener noreferrer" class="contact-action-btn">
+                            <span data-i18n="contact.btnTelegram">Message on Telegram</span>
+                        </a>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-card">
+                        <div class="contact-card-icon icon-mail">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="contact-title" data-i18n="contact.emailCardTitle">Email Address</h3>
+                        <p class="contact-desc" data-i18n="contact.emailDesc">For formal collaborations and technical inquiries</p>
+                        <div class="contact-value" id="email-address-text">TheToex@proton.me</div>
+                        <button type="button" class="contact-action-btn" onclick="copyText('TheToex@proton.me', this, currentLang === 'fa' ? 'ایمیل کپی شد! ✓' : 'Email Copied! ✓')">
+                            <span data-i18n="contact.btnCopyEmail">Copy Email</span>
+                        </button>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="contact-card">
+                        <div class="contact-card-icon icon-gh">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <h3 class="contact-title" data-i18n="contact.githubCardTitle">GitHub</h3>
+                        <p class="contact-desc" data-i18n="contact.githubDesc">Inspect code, contribute, and track development activity</p>
+                        <div class="contact-value">github.com/TheToex</div>
+                        <a href="https://github.com/TheToex" target="_blank" rel="noopener noreferrer" class="contact-action-btn">
+                            <span data-i18n="contact.btnGithub">Visit @TheToex</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                © 2026 <strong>TheToex</strong>. <span data-i18n="footer.rights">All rights reserved.</span>
+            </div>
+            <div class="footer-note" data-i18n="footer.builtWith">
+                Engineered with passion, focus, and love for open-source tech.
+            </div>
+            <div class="footer-links">
+                <a href="#hero" class="footer-link">Top ↑</a>
+                <a href="/donate" class="footer-link" data-i18n="nav.donate">Donate</a>
+                <a href="https://github.com/TheToex" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+                <a href="https://t.me/TheToex" target="_blank" rel="noopener noreferrer" class="footer-link">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Translations & Main Scripts -->
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
